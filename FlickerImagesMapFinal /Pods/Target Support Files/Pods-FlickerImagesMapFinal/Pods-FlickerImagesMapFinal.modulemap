@@ -1,0 +1,6 @@
+framework module Pods_FlickerImagesMapFinal {
+  umbrella header "Pods-FlickerImagesMapFinal-umbrella.h"
+
+  export *
+  module * { export * }
+}
