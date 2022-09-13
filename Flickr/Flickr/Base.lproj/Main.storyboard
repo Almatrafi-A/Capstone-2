@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Flickr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qdq-Gr-mKK">
+                                <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.97010434649999999" blue="0.91488129100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pEz-MR-5D0">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fQd-fT-qi8">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pkR-Fd-mHz">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jMf-JY-tTb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="meY-Iw-rwm"/>
+                                </connections>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-mL-I64">
+                                <rect key="frame" x="119" y="62" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcB-s9-BsK">
+                                <rect key="frame" x="119" y="60" width="156" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Change Location">
+                                    <color key="titleColor" red="0.4039215686" green="0.43529411759999997" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NHH-eU-aXH" kind="show" id="A1C-Oz-hIe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.97010434645668442" blue="0.91488129095134263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qdq-Gr-mKK" secondAttribute="trailing" id="M86-hE-BQ9"/>
+                            <constraint firstItem="qdq-Gr-mKK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mib-6z-H2n"/>
+                            <constraint firstAttribute="bottom" secondItem="qdq-Gr-mKK" secondAttribute="bottom" id="fUC-3r-ntl"/>
+                            <constraint firstItem="qdq-Gr-mKK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="lpI-xq-13I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ETU-PX-yxA"/>
+                    <connections>
+                        <outlet property="imagesCollectionView" destination="qdq-Gr-mKK" id="e54-pj-L8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="61.607142857142854"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="uQc-DE-Uei">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="NHH-eU-aXH" customClass="MapViewController" customModule="Flickr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lU3-q8-a1W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-sT-OnR" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPP-pt-2KM">
+                                <rect key="frame" x="107" y="797" width="200" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.7448729945" blue="0.13737959320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rHw-q5-2SG"/>
+                                    <constraint firstAttribute="width" constant="200" id="wPI-kz-gTR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Select Location">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectButtonAction:" destination="NHH-eU-aXH" eventType="touchUpInside" id="Tvw-mV-w7z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0LM-l6-FXT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0LM-l6-FXT" firstAttribute="trailing" secondItem="RzN-sT-OnR" secondAttribute="trailing" id="NQa-Up-pvR"/>
+                            <constraint firstItem="hPP-pt-2KM" firstAttribute="top" secondItem="RzN-sT-OnR" secondAttribute="bottom" constant="30" id="PNw-n5-C40"/>
+                            <constraint firstItem="0LM-l6-FXT" firstAttribute="bottom" secondItem="hPP-pt-2KM" secondAttribute="bottom" constant="15" id="RBA-K2-xdB"/>
+                            <constraint firstItem="RzN-sT-OnR" firstAttribute="leading" secondItem="0LM-l6-FXT" secondAttribute="leading" id="kA2-q0-UzL"/>
+                            <constraint firstItem="RzN-sT-OnR" firstAttribute="top" secondItem="0LM-l6-FXT" secondAttribute="top" id="pZ7-2x-chE"/>
+                            <constraint firstItem="hPP-pt-2KM" firstAttribute="centerX" secondItem="lU3-q8-a1W" secondAttribute="centerX" id="py7-0q-E35"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PLM-hy-2lk"/>
+                    <connections>
+                        <outlet property="mapView" destination="RzN-sT-OnR" id="VKV-3Y-xSu"/>
+                        <outlet property="selectButton" destination="hPP-pt-2KM" id="yWN-eW-yc4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="locationSelectedSegue" id="6kV-wb-b7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfC-Mt-5kL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location-pin" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

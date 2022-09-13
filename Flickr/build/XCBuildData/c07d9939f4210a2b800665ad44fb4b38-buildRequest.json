@@ -1,0 +1,55 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9818352c54edac2258b91768852065ce5e"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98048dd62dd4787cfb461959b155da8134"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e982cd7dc90de9af3b1af83c964676adc6f"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98289fd22d3e768a59d613664ca4c69c51"
+    }
+  ],
+  "containerPath" : "/Users/nosaibah/Desktop/Flickr/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/nosaibah/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/nosaibah/Library/Developer/Xcode/DerivedData/Pods-avguzgbxeifureajhwpmlvarridj/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/nosaibah/Library/Developer/Xcode/DerivedData/Pods-avguzgbxeifureajhwpmlvarridj/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

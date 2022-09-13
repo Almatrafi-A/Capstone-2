@@ -1,0 +1,7 @@
+Target dependency graph (4 targets)
+GoogleMaps in Pods, no dependencies
+Pods-Flickr in Pods, no dependencies
+Pods-Flickr-FlickrUITests in Pods, depends on:
+GoogleMaps in Pods (explicit)
+Pods-FlickrTests in Pods, depends on:
+Pods-Flickr in Pods (explicit)
