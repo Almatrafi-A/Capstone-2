@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="gTV-IL-0wX" customClass="PhotoCell" customModule="FlikrMaps2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3sY-60-N75">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="809-jL-MGf"/>
+                            <constraint firstAttribute="height" constant="164" id="WSU-KV-skK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GS-Zv-OYA">
+                        <rect key="frame" x="20" y="170" width="160" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3sY-60-N75" secondAttribute="trailing" id="8Ax-FD-Pav"/>
+                <constraint firstItem="4GS-Zv-OYA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Hkg-Ry-VI0"/>
+                <constraint firstAttribute="trailing" secondItem="4GS-Zv-OYA" secondAttribute="trailing" constant="20" id="MRm-BY-H5n"/>
+                <constraint firstItem="3sY-60-N75" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QVb-23-xQf"/>
+                <constraint firstAttribute="bottom" secondItem="4GS-Zv-OYA" secondAttribute="bottom" constant="9" id="eJK-jf-29Y"/>
+                <constraint firstItem="4GS-Zv-OYA" firstAttribute="top" secondItem="3sY-60-N75" secondAttribute="bottom" constant="6" id="h0g-mE-m5f"/>
+                <constraint firstItem="3sY-60-N75" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nCg-Op-aT9"/>
+            </constraints>
+            <connections>
+                <outlet property="distanceCell" destination="4GS-Zv-OYA" id="AHV-6h-gp3"/>
+                <outlet property="photoCell" destination="3sY-60-N75" id="avf-oD-uKx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
