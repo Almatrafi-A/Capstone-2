@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="2gx-Qb-Tug">
+                                <rect key="frame" x="95" y="242" width="224" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="fY2-sU-s4R"/>
+                                    <constraint firstAttribute="height" constant="226" id="lok-TU-9Oa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c85-5H-YCk">
+                                <rect key="frame" x="114" y="476" width="186" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="hx3-7Y-kU6"/>
+                                    <constraint firstAttribute="height" constant="52" id="sEL-S9-ZKC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.40666001839999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gx-Qb-Tug" secondAttribute="trailing" constant="95" id="Buy-fF-9WJ"/>
+                            <constraint firstItem="2gx-Qb-Tug" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="198" id="OQe-oi-RWe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c85-5H-YCk" secondAttribute="bottom" constant="334" id="RLn-gf-1nW"/>
+                            <constraint firstItem="2gx-Qb-Tug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Tt4-z3-o2D"/>
+                            <constraint firstItem="c85-5H-YCk" firstAttribute="top" secondItem="2gx-Qb-Tug" secondAttribute="bottom" constant="8" id="eKi-JV-YHs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c85-5H-YCk" secondAttribute="trailing" constant="114" id="gtY-Ms-atN"/>
+                            <constraint firstItem="c85-5H-YCk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="rVL-Sx-3vT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="256" height="256"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="syv-bT-stY">
+                                <rect key="frame" x="0.0" y="202" width="414" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="694" id="R1V-i9-JkA"/>
+                                    <constraint firstAttribute="width" constant="414" id="sHF-pK-3fx"/>
+                                </constraints>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-3u-vra">
+                                <rect key="frame" x="130" y="55" width="154" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="bXE-rN-ALJ"/>
+                                    <constraint firstAttribute="width" constant="154" id="odm-OC-uhe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.40666001843429633" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="syv-bT-stY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="J75-vk-f8x"/>
+                            <constraint firstItem="syv-bT-stY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q9j-gf-byO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BCe-3u-vra" secondAttribute="trailing" constant="130" id="Zvx-Wh-94P"/>
+                            <constraint firstItem="BCe-3u-vra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="fmX-Ya-AUT"/>
+                            <constraint firstItem="syv-bT-stY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="gdV-90-T1B"/>
+                            <constraint firstItem="syv-bT-stY" firstAttribute="top" secondItem="BCe-3u-vra" secondAttribute="bottom" constant="8" id="kaD-fq-iwP"/>
+                            <constraint firstItem="BCe-3u-vra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="ltO-9h-wiP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="syv-bT-stY" secondAttribute="trailing" id="mAA-Fe-uwh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewImage" destination="syv-bT-stY" id="d3z-Rj-w4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165.21739130434784" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
